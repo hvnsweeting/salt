@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 '''
 The module used to execute states in salt. A state is unlike a module
 execution in that instead of just executing a command it ensure that a
@@ -1868,7 +1868,7 @@ class State(object):
                                 return running
                             else:
                                 return running
-                        elif ctag not in running:
+                        else:
                             log.error('Recursive requisite found')
                             running[tag] = {
                                     'changes': {},
